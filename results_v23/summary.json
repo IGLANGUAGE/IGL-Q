@@ -1,0 +1,58 @@
+{
+  "config": {
+    "b1_alpha": 0.16,
+    "bootstrap_samples": 10000,
+    "ci_alpha": 0.05,
+    "dt": 0.04,
+    "g_max": 1.3,
+    "g_min": 0.7,
+    "global_alpha": 0.14,
+    "hybrid_global_gain": 1.0,
+    "hybrid_local_gain": 1.0,
+    "local_alpha": 0.18,
+    "local_coupling": 0.32,
+    "n_qubits": 20,
+    "output_dir": "results_v23",
+    "rho_global": 0.985,
+    "rho_local": 0.94,
+    "seed": 20260923,
+    "sigma_global": 0.035,
+    "sigma_independent": 0.012,
+    "sigma_local": 0.025,
+    "sigma_probe": 0.055,
+    "steps": 120,
+    "trajectories": 1000,
+    "u_max": 1.5
+  },
+  "config_sha256": "4794dad84e7982032908d594ae5bd887b855211896b82447806ef620eb962446",
+  "git_commit": "ccdf91b9fdbea031d9e77e6b127fec76e357a611",
+  "mean_control_energy": {
+    "B1": 2.8736054571568195,
+    "GLOBAL": 2.4570061717554803,
+    "HYBRID": 2.91199525284607,
+    "LOCAL": 0.5563863515107975
+  },
+  "mean_final_fidelity": {
+    "B1": 0.8626531017760383,
+    "GLOBAL": 0.8190329529437427,
+    "HYBRID": 0.8190329529437427,
+    "LOCAL": 0.5072208193006222
+  },
+  "mean_integrated_fidelity": {
+    "B1": 0.90164268398039,
+    "GLOBAL": 0.8725934302288805,
+    "HYBRID": 0.8725934302288805,
+    "LOCAL": 0.5753872001783293
+  },
+  "primary_95_ci": [
+    -1.1102230246251565e-16,
+    1.1102230246251565e-16
+  ],
+  "primary_delta_hybrid": 0.0,
+  "secondary_per_trajectory": {
+    "fraction_positive": 0.105,
+    "mean": -0.05604054403566195,
+    "median": 0.0
+  },
+  "source_sha256": "0a912059f17120a03b44ac29cddd27c1b4db019c7196e7e34e037c4900274ec2"
+}

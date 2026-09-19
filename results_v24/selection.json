@@ -1,0 +1,29 @@
+{
+  "config_sha256": "d5436a3bf9c8e40f2a4b08985a4074068d25aa323b8c957827a470504253c228",
+  "lambda_global": 0.32091142171123294,
+  "quality_q": 1.0,
+  "sigma2_iso": 0.0,
+  "tasks": {
+    "GLOBAL": {
+      "R_global": 0.32091142171123277,
+      "R_local": 0.0015775335760949056,
+      "r_global": 0.9951082554914465,
+      "r_local": 0.0048917445085502765,
+      "selected_controller": "GLOBAL"
+    },
+    "LOCAL": {
+      "R_global": 2.5819827316514495e-18,
+      "R_local": 0.004870334968612745,
+      "r_global": 5.301447946169427e-16,
+      "r_local": 0.9999999999997942,
+      "selected_controller": "LOCAL"
+    },
+    "MIXED": {
+      "R_global": 0.16045571085561644,
+      "R_local": 0.003362003143279277,
+      "r_global": 0.9794771697076489,
+      "r_local": 0.02052283029234506,
+      "selected_controller": "GLOBAL"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "artifacts": {
+    "corruption_sha256": "701b09200c0951ee6baa74df6cf2562baa7e1d6df3e68412e7bfafe68e227b36",
+    "familiar_sha256": "b9171527d8d91615ef9f4535bc7b69feaaea362ac58344c4d9d21a43893b88c2",
+    "shift_sha256": "5f860e3b18929cb12cfce7189ded8401c64c461f9d1d5a8ea6c8d7474e01a3ad",
+    "train_sha256": "95da7a875e913025720149627b9be0914aa2e9ae2445a8019b531375705eb545"
+  },
+  "config": {
+    "bootstrap_samples": 10000,
+    "ci_alpha": 0.05,
+    "context_dim": 3,
+    "deploy_exploration": 0.05,
+    "event_step": 300,
+    "familiar_episodes": 1000,
+    "lcb_lambda": 0.8,
+    "max_prototypes": 64,
+    "min_samples": 4,
+    "output_dir": "results_memory_v02",
+    "recovery_episodes": 800,
+    "recovery_min_samples": 4,
+    "reward_sigma": 0.035,
+    "safe_policy": "B1",
+    "seed": 20260926,
+    "sigma_floor": 0.035,
+    "surprise_alpha": 0.18,
+    "surprise_consecutive": 4,
+    "surprise_threshold": 2.2,
+    "train_episodes": 800,
+    "ucb_beta": 1.0,
+    "validity_radius": 0.42
+  },
+  "corruption": {
+    "detected_at": 303,
+    "detection_delay": 3,
+    "event_step": 300
+  },
+  "familiar": {
+    "advantage_vs_b1": 0.03960358943020043,
+    "advantage_vs_b1_ci95": [
+      0.03655513993924086,
+      0.04269779038972615
+    ],
+    "advantage_vs_v01": 0.026865736499192154,
+    "advantage_vs_v01_ci95": [
+      0.02394936179482298,
+      0.02981056224039886
+    ],
+    "mean_regret_b1": 0.048432666065389963,
+    "mean_regret_v01": 0.03569481313438169,
+    "mean_regret_v02": 0.008829076635189536
+  },
+  "regime_shift": {
+    "detected_at": null,
+    "detection_delay": null,
+    "event_step": 300
+  },
+  "train": {
+    "full_coverage_prototypes": 12,
+    "generation_id": 0,
+    "policy_counts": {
+      "B1": 234,
+      "GLOBAL": 124,
+      "HYBRID": 305,
+      "LOCAL": 137
+    },
+    "prototype_count": 12,
+    "trusted": true
+  }
+}

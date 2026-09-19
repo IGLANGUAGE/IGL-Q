@@ -1,0 +1,74 @@
+{
+  "artifacts": {
+    "D_trained_sha256": "72530f38755bf9490d7bd9b0041d9c5baa5734a9e122aac0f952f9aead43e15d",
+    "familiar_sha256": "1ff049344fab07902671283939a1b50c154090674571cc7131b5a775740e6822",
+    "shift_sha256": "67b82700458abb73bb72714ffe767bbd5b65b3849a725895c937217735c2efce",
+    "wrong_sha256": "6bb2fe0e4416ffaa85e0a47c05c9a77a0c249f38b550fab6f35a8a4cecfb691e"
+  },
+  "config": {
+    "context_dim": 3,
+    "exploration_rate": 0.12,
+    "max_prototypes": 64,
+    "min_samples": 4,
+    "output_dir": "results_memory_v01",
+    "reward_sigma": 0.035,
+    "safe_policy": "B1",
+    "seed": 20260925,
+    "test_episodes": 400,
+    "train_episodes": 600,
+    "uncertainty_penalty": 0.8,
+    "validity_radius": 0.42
+  },
+  "criteria": {
+    "FAMILIAR": "lower 95% CI(memory_vs_b1) > 0 \u2192 memory adds contextual value",
+    "STALE": "compare memory_vs_b1 vs familiar; expect degradation. Not required to be negative.",
+    "WRONG_D": "upper 95% CI(memory_vs_b1) < 0 \u2192 wrong memory is provably worse than safe baseline"
+  },
+  "summaries": [
+    {
+      "fraction_positive_advantage": 0.0,
+      "mean_b1_regret": 0.05091876224581186,
+      "mean_observed_reward": 0.8325889444663679,
+      "mean_regret": 0.05091876224581186,
+      "median_regret": 0.047172815238378796,
+      "memory_gate_fraction": 1.0,
+      "memory_vs_b1": 0.0,
+      "memory_vs_b1_95ci": [
+        0.0,
+        0.0
+      ],
+      "name": "FAMILIAR",
+      "oracle_match": 0.2925
+    },
+    {
+      "fraction_positive_advantage": 0.0,
+      "mean_b1_regret": 0.022293817623113252,
+      "mean_observed_reward": 0.8545141598478649,
+      "mean_regret": 0.022293817623113252,
+      "median_regret": 0.0,
+      "memory_gate_fraction": 1.0,
+      "memory_vs_b1": 0.0,
+      "memory_vs_b1_95ci": [
+        0.0,
+        0.0
+      ],
+      "name": "REGIME SHIFT / STALE D",
+      "oracle_match": 0.6125
+    },
+    {
+      "fraction_positive_advantage": 0.185,
+      "mean_b1_regret": 0.0524122650884724,
+      "mean_observed_reward": 0.7424026302796721,
+      "mean_regret": 0.14138959409046817,
+      "median_regret": 0.14915321387571073,
+      "memory_gate_fraction": 0.9975,
+      "memory_vs_b1": -0.08897732900199579,
+      "memory_vs_b1_95ci": [
+        -0.09754607169849988,
+        -0.08037728908289639
+      ],
+      "name": "WRONG D",
+      "oracle_match": 0.11
+    }
+  ]
+}
